@@ -1,0 +1,30 @@
+No. of twitter keys : 1
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/opt/anaconda3/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/geetikasharma/Desktop/FakeNewsNet/code/resource_server/app.py", line 61, in <module>
+    app.run(host='0.0.0.0', debug=False)
+  File "/opt/anaconda3/lib/python3.7/site-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/opt/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 990, in run_simple
+    inner()
+  File "/opt/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 943, in inner
+    fd=fd,
+  File "/opt/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 786, in make_server
+    host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
+  File "/opt/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 679, in __init__
+    HTTPServer.__init__(self, server_address, handler)
+  File "/opt/anaconda3/lib/python3.7/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/opt/anaconda3/lib/python3.7/http/server.py", line 137, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/opt/anaconda3/lib/python3.7/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
